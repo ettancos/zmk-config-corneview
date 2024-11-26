@@ -50,7 +50,7 @@
         backspace_delete: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DELETE";
-            bindings = <&kp BACKSPACE>, <&kp BACKSPACE>;
+            bindings = <&kp BACKSPACE>, <&kp DEL>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
