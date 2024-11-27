@@ -44,7 +44,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             flavor = "balanced";
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <200>;
         };
 
         backspace_delete: backspace_delete {
