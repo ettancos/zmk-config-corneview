@@ -66,7 +66,7 @@
 &kp ESCAPE  &kp Q  &kp W  &kp F                &kp P  &kp B                        &kp J                     &kp L  &kp U                 &kp Y    &kp SEMICOLON  &backspace_delete
 &kp TAB     &kp A  &kp R  &homerow LEFT_GUI S  &kp T  &kp G                        &kp M                     &kp N  &homerow RIGHT_GUI E  &kp I    &kp O          &kp SQT
 &kp LCTRL   &kp Z  &kp X  &kp C                &kp D  &kp V                        &kp K                     &kp H  &kp COMMA             &kp DOT  &kp FSLH       &kp RCTRL
-                          &mo 4                &mo 2  &homerow LEFT_SHIFT SPACE    &homerow RIGHT_SHIFT RET  &mo 3  &kp LEFT_ALT
+                          &kp LEFT_GUI         &mo 2  &homerow LEFT_SHIFT SPACE    &homerow RIGHT_SHIFT RET  &mo 3  &kp LEFT_ALT
             >;
         };
 
@@ -120,7 +120,7 @@
 &trans          &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP  &kp END        &trans  &trans
 &kp LEFT_SHIFT  &kp LG(A)         &kp LG(S)         &kp LG(D)         &kp LG(F)         &kp LG(G)           &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP)   &kp LG(RIGHT)  &trans  &trans
 &kp LCTRL       &kp LG(Q)         &trans            &kp LG(C)         &kp LG(V)         &kp LG(R)           &trans        &trans         &trans       &trans         &trans  &trans
-                                                    &kp LEFT_GUI      &kp LEFT_ALT      &trans              &trans        &trans         &trans
+                                                    &kp LEFT_GUI      &trans            &trans              &trans        &trans         &trans
             >;
         };
 
