@@ -29,7 +29,7 @@
         };
 
         fn {
-            bindings = <&to 5>;
+            bindings = <&mo 5>;
             key-positions = <36 41>;
         };
 
@@ -41,6 +41,11 @@
         escr {
             bindings = <&kp ESCAPE>;
             key-positions = <10 11>;
+        };
+
+        capsw {
+            bindings = <&caps_word>;
+            key-positions = <17 18>;
         };
     };
 
@@ -73,10 +78,10 @@
 
         colemak-dh {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp F         &kp P  &kp B                        &kp J                     &kp L  &kp U         &kp Y    &kp SEMICOLON  &backspace_delete
-&kp LEFT_SHIFT  &kp A  &kp R  &kp S         &kp T  &kp G                        &kp M                     &kp N  &kp E         &kp I    &kp O          &kp SQT
-&kp LCTRL       &kp Z  &kp X  &kp C         &kp D  &kp V                        &kp K                     &kp H  &kp COMMA     &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
-                              &kp LEFT_GUI  &mo 2  &homerow LEFT_SHIFT SPACE    &homerow RIGHT_SHIFT RET  &mo 3  &kp LEFT_ALT
+&kp TAB         &kp Q  &kp W  &kp F         &kp P  &kp B        &kp J    &kp L  &kp U         &kp Y    &kp SEMICOLON  &backspace_delete
+&kp LEFT_SHIFT  &kp A  &kp R  &kp S         &kp T  &kp G        &kp M    &kp N  &kp E         &kp I    &kp O          &kp SQT
+&kp LCTRL       &kp Z  &kp X  &kp C         &kp D  &kp V        &kp K    &kp H  &kp COMMA     &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
+                              &kp LEFT_GUI  &mo 2  &kp SPACE    &kp RET  &mo 3  &kp LEFT_ALT
             >;
         };
 
@@ -97,58 +102,43 @@
 
         lower_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            bindings = <
-&kp TAB  &kp N1  &kp N2  &kp N3        &kp N4        &kp N5    &kp N6    &kp N7         &kp N8     &kp N9     &kp N0  &trans
-&trans   &trans  &trans  &kp LEFT_GUI  &kp LEFT_ALT  &trans    &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans  &trans
-&trans   &trans  &trans  &trans        &trans        &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &trans  &trans
-                         &trans        &trans        &trans    &trans    &trans         &kp RALT
-            >;
-        };
-
-        raise_layer {
-            // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT   &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &trans    &kp SQT  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &trans    &trans   &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                           &trans    &trans    &trans       &trans     &trans     &sk RALT
+&trans  &kp HOME   &kp PG_UP  &kp PG_DN  &kp END  &kp LEFT_BRACKET     &kp MINUS  &kp N7  &kp N8    &kp N9  &kp FSLH      &trans
+&trans  &kp L      &kp K      &kp J      &kp H    &kp RIGHT_BRACKET    &kp EQUAL  &kp N4  &kp N5    &kp N6  &kp LS(STAR)  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &none    &kp LC(V)            &kp AT     &kp N1  &kp N2    &kp N3  &kp POUND     &trans
+                              &trans     &trans   &trans               &trans     &kp N0  &sk RALT
+            >;
+        };
+
+        raise_layer {
+            bindings = <
+&trans  &kp FSLH      &kp N9  &kp N8  &kp N7  &kp MINUS           &kp MINUS  &kp END  &kp PAGE_DOWN  &kp PG_UP  &kp HOME   &trans
+&trans  &kp LS(STAR)  &kp N6  &kp N5  &kp N4  &kp EQUAL           &kp EQUAL  &kp H    &kp J          &kp K      &kp L      &trans
+&trans  &kp POUND     &kp N3  &kp N2  &kp N1  &kp SINGLE_QUOTE    &kp RC(V)  &none    &kp RC(C)      &kp RC(X)  &kp RC(Z)  &trans
+                              &trans  &kp N0  &trans              &trans     &trans   &sk RALT
             >;
         };
 
         hyprland {
             bindings = <
-&trans          &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP  &kp END        &trans  &trans
-&kp LEFT_SHIFT  &kp LG(A)         &kp LG(S)         &kp LG(D)         &kp LG(F)         &kp LG(G)           &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP)   &kp LG(RIGHT)  &trans  &trans
-&kp LCTRL       &kp LG(Q)         &trans            &kp LG(C)         &kp LG(V)         &kp LG(R)           &trans        &trans         &trans       &trans         &trans  &trans
-                                                    &kp LEFT_GUI      &trans            &trans              &trans        &trans         &trans
+&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP  &kp END        &trans  &trans
+&trans  &kp LG(A)         &kp LG(S)         &kp LG(D)         &kp LG(F)         &kp LG(G)           &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP)   &kp LG(RIGHT)  &trans  &trans
+&trans  &kp LG(Q)         &trans            &kp LG(C)         &kp LG(V)         &kp LG(R)           &trans        &trans         &trans       &trans         &trans  &trans
+                                            &kp LEFT_GUI      &trans            &trans              &trans        &trans         &trans
             >;
         };
 
         fn {
             bindings = <
-&kp F1  &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7             &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&kp F7  &kp F8        &kp F9        &kp F10       &kp F11       &kp F12         &ext_power EP_TOG  &trans  &trans  &trans   &trans   &trans
-&to 0   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans             &trans  &trans  &trans   &trans   &trans
-                                    &trans        &trans        &trans          &trans             &trans  &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp C_VOLUME_UP    &kp K_MUTE    &trans        &kp LEFT_ALT  &kp PRINTSCREEN    &kp F7             &kp F9  &kp F10  &kp F11  &kp F12  &trans
+&trans  &kp C_VOLUME_DOWN  &kp F9        &kp F10       &kp F11       &kp F12            &ext_power EP_TOG  &kp F5  &kp F6   &kp F7   &kp F8   &trans
+&trans  &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4       &trans             &kp F1  &kp F2   &kp F3   &kp F4   &trans
+                                         &trans        &trans        &trans             &trans             &trans  &trans
             >;
         };
     };
