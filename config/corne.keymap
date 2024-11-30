@@ -115,12 +115,12 @@
             >;
         };
 
-        raise_layer {
+        nav {
             bindings = <
-&trans  &kp FSLH      &kp N9  &kp N8  &kp N7  &kp MINUS           &kp MINUS  &kp END   &kp PAGE_DOWN  &kp PG_UP  &kp HOME   &trans
-&trans  &kp LS(STAR)  &kp N6  &kp N5  &kp N4  &kp EQUAL           &kp EQUAL  &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans
-&trans  &kp POUND     &kp N3  &kp N2  &kp N1  &kp SINGLE_QUOTE    &kp RC(V)  &none     &kp RC(C)      &kp RC(X)  &kp RC(Z)  &trans
-                              &trans  &trans  &trans              &trans     &trans    &trans
+&trans  &trans  &trans        &trans        &trans  &trans    &trans     &kp END    &kp PAGE_DOWN  &kp PG_UP  &kp HOME   &trans
+&trans  &trans  &kp LEFT_ALT  &kp LEFT_GUI  &trans  &trans    &trans     &kp LEFT   &kp DOWN       &kp UP     &kp RIGHT  &trans
+&trans  &trans  &trans        &trans        &trans  &trans    &kp RC(V)  &kp LC(V)  &kp RC(C)      &kp RC(X)  &kp RC(Z)  &trans
+                              &trans        &trans  &trans    &trans     &trans     &trans
             >;
         };
 
