@@ -29,7 +29,7 @@
         };
 
         fn {
-            bindings = <&mo 5>;
+            bindings = <&mo 0>;
             key-positions = <36 41>;
         };
 
@@ -81,7 +81,7 @@
 &kp TAB         &kp Q  &kp W  &kp F         &kp P  &kp B                      &kp J                   &kp L  &kp U          &kp Y    &kp SEMICOLON  &backspace_delete
 &kp LEFT_SHIFT  &kp A  &kp R  &kp S         &kp T  &kp G                      &kp H                   &kp N  &kp E          &kp I    &kp O          &kp SQT
 &kp LCTRL       &kp Z  &kp X  &kp C         &kp D  &kp V                      &kp K                   &kp M  &kp COMMA      &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
-                              &kp LEFT_GUI  &mo 2  &homerow LEFT_ALT SPACE    &homerow RIGHT_ALT RET  &mo 3  &kp RIGHT_GUI
+                              &kp LEFT_GUI  &mo 2  &homerow LEFT_ALT SPACE    &homerow RIGHT_ALT RET  &mo 5  &kp RIGHT_GUI
             >;
         };
 
@@ -108,28 +108,28 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1     &kp N2     &kp N3        &kp N4        &kp N5       &kp N6     &kp N7  &kp N8  &kp N9  &kp HASH      &trans
-&trans  &trans     &trans     &kp LEFT_GUI  &kp LEFT_ALT  &trans       &kp MINUS  &kp N4  &kp N5  &kp N6  &kp LS(STAR)  &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)     &none         &kp LC(V)    &kp PLUS   &kp N1  &kp N2  &kp N3  &kp SLASH     &trans
-                              &trans        &trans        &trans       &trans     &kp N0  &trans
+&trans  &kp N1     &kp N2     &kp N3        &kp N4        &kp N5       &kp N6     &kp N7    &kp N8     &kp N9     &kp N0     &trans
+&trans  &trans     &trans     &kp LEFT_GUI  &kp LEFT_ALT  &trans       &kp MINUS  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)     &none         &kp LC(V)    &kp PLUS   &kp END   &kp PG_DN  &kp PG_UP  &kp HOME   &trans
+                              &trans        &trans        &trans       &trans     &kp N0    &trans
+            >;
+        };
+
+        sym {
+            bindings = <
+&trans  &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD    &kp AMPERSAND  &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT           &trans
+&trans  &kp EXCL          &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH      &kp PIPE       &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION          &trans
+&trans  &kp CARET         &kp SLASH      &kp STAR          &kp BACKSLASH      &trans        &kp TILDE      &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LS(SINGLE_QUOTE)  &trans
+                                         &trans            &trans             &trans        &trans         &kp N0         &trans
             >;
         };
 
         nav {
             bindings = <
-&trans  &trans  &trans        &trans        &trans  &trans    &trans     &kp END    &kp PAGE_DOWN  &kp PG_UP  &kp HOME   &trans
-&trans  &trans  &kp LEFT_ALT  &kp LEFT_GUI  &trans  &trans    &trans     &kp LEFT   &kp DOWN       &kp UP     &kp RIGHT  &trans
-&trans  &trans  &trans        &trans        &trans  &trans    &kp RC(V)  &kp LC(V)  &kp RC(C)      &kp RC(X)  &kp RC(Z)  &trans
-                              &trans        &trans  &trans    &trans     &trans     &trans
-            >;
-        };
-
-        hyprland {
-            bindings = <
-&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP  &kp END        &trans  &trans
-&trans  &kp LG(A)         &kp LG(S)         &kp LG(D)         &kp LG(F)         &kp LG(G)           &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP)   &kp LG(RIGHT)  &trans  &trans
-&trans  &kp LG(Q)         &trans            &kp LG(C)         &kp LG(V)         &kp LG(R)           &trans        &trans         &trans       &trans         &trans  &trans
-                                            &trans            &trans            &trans              &trans        &trans         &trans
+&trans  &trans  &trans        &trans        &trans  &trans    &trans     &kp END   &kp PAGE_DOWN  &kp PG_UP  &kp HOME   &trans
+&trans  &trans  &kp LEFT_ALT  &kp LEFT_GUI  &trans  &trans    &trans     &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans
+&trans  &trans  &trans        &trans        &trans  &trans    &kp RC(V)  &kp H     &kp J          &kp K      &kp L      &trans
+                              &trans        &trans  &trans    &trans     &trans    &trans
             >;
         };
 
@@ -142,12 +142,12 @@
             >;
         };
 
-        sym {
+        hyprland {
             bindings = <
-&trans  &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD    &kp AMPERSAND  &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT           &trans
-&trans  &kp EXCL          &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH      &kp PIPE       &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION          &trans
-&trans  &kp CARET         &kp SLASH      &kp STAR          &kp BACKSLASH      &trans        &kp TILDE      &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LS(SINGLE_QUOTE)  &trans
-                                         &trans            &trans             &trans        &trans         &kp N0         &trans
+&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP  &kp END        &trans  &trans
+&trans  &kp LG(A)         &kp LG(S)         &kp LG(D)         &kp LG(F)         &kp LG(G)           &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP)   &kp LG(RIGHT)  &trans  &trans
+&trans  &kp LG(Q)         &trans            &kp LG(C)         &kp LG(V)         &kp LG(R)           &trans        &trans         &trans       &trans         &trans  &trans
+                                            &trans            &trans            &trans              &trans        &trans         &trans
             >;
         };
     };
