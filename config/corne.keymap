@@ -100,7 +100,7 @@
             >;
         };
 
-        lower_layer {
+        num {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -108,10 +108,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp HOME   &kp PG_UP  &kp PG_DN  &kp END  &kp LEFT_BRACKET     &kp MINUS  &kp N7  &kp N8  &kp N9  &kp FSLH      &trans
-&trans  &kp L      &kp K      &kp J      &kp H    &kp RIGHT_BRACKET    &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp LS(STAR)  &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &none    &kp LC(V)            &kp AT     &kp N1  &kp N2  &kp N3  &kp POUND     &trans
-                              &trans     &trans   &trans               &trans     &trans  &trans
+&trans  &trans     &trans     &trans        &trans        &trans       &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp HASH      &trans
+&trans  &kp L      &kp K      &kp LEFT_GUI  &kp LEFT_ALT  &trans       &kp MINUS  &kp N4  &kp N5  &kp N6  &kp LS(STAR)  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)     &none         &kp LC(V)    &kp PLUS   &kp N1  &kp N2  &kp N3  &kp SLASH     &trans
+                              &trans        &trans        &trans       &trans     &kp N0  &trans
             >;
         };
 
