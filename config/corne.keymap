@@ -79,8 +79,8 @@
         colemak-dh {
             bindings = <
 &kp TAB         &kp Q  &kp W  &kp F         &kp P  &kp B                      &kp J                   &kp L  &kp U          &kp Y    &kp SEMICOLON  &backspace_delete
-&kp LEFT_SHIFT  &kp A  &kp R  &kp S         &kp T  &kp G                      &kp H                   &kp N  &kp E          &kp I    &kp O          &kp SQT
-&kp LCTRL       &kp Z  &kp X  &kp C         &kp D  &kp V                      &kp K                   &kp M  &kp COMMA      &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &kp A  &kp R  &kp S         &kp T  &kp G                      &kp M                   &kp N  &kp E          &kp I    &kp O          &kp SQT
+&kp LCTRL       &kp Z  &kp X  &kp C         &kp D  &kp V                      &kp K                   &kp H  &kp COMMA      &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
                               &kp LEFT_GUI  &mo 2  &homerow LEFT_ALT SPACE    &homerow RIGHT_ALT RET  &mo 3  &kp RIGHT_GUI
             >;
         };
