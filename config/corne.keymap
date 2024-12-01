@@ -29,7 +29,7 @@
         };
 
         fn {
-            bindings = <&mo 0>;
+            bindings = <&mo 5>;
             key-positions = <36 41>;
         };
 
@@ -81,7 +81,7 @@
 &kp TAB         &kp Q  &kp W  &kp F         &kp P  &kp B                      &kp J                   &kp L  &kp U          &kp Y    &kp SEMICOLON  &backspace_delete
 &kp LEFT_SHIFT  &kp A  &kp R  &kp S         &kp T  &kp G                      &kp H                   &kp N  &kp E          &kp I    &kp O          &kp SQT
 &kp LCTRL       &kp Z  &kp X  &kp C         &kp D  &kp V                      &kp K                   &kp M  &kp COMMA      &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
-                              &kp LEFT_GUI  &mo 2  &homerow LEFT_ALT SPACE    &homerow RIGHT_ALT RET  &mo 5  &kp RIGHT_GUI
+                              &kp LEFT_GUI  &mo 2  &homerow LEFT_ALT SPACE    &homerow RIGHT_ALT RET  &mo 3  &kp RIGHT_GUI
             >;
         };
 
@@ -120,7 +120,7 @@
 &trans  &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD    &kp AMPERSAND  &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT           &trans
 &trans  &kp EXCL          &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH      &kp PIPE       &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION          &trans
 &trans  &kp CARET         &kp SLASH      &kp STAR          &kp BACKSLASH      &trans        &kp TILDE      &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LS(SINGLE_QUOTE)  &trans
-                                         &trans            &trans             &trans        &trans         &kp N0         &trans
+                                         &trans            &trans             &trans        &trans         &trans         &trans
             >;
         };
 
@@ -135,10 +135,10 @@
 
         fn {
             bindings = <
-&trans  &kp C_VOLUME_UP    &kp K_MUTE    &trans        &kp LEFT_ALT  &kp PRINTSCREEN    &kp F7             &kp F9  &kp F10  &kp F11  &kp F12  &trans
-&trans  &kp C_VOLUME_DOWN  &kp F9        &kp F10       &kp F11       &kp F12            &ext_power EP_TOG  &kp F5  &kp F6   &kp F7   &kp F8   &trans
-&trans  &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4       &trans             &kp F1  &kp F2   &kp F3   &kp F4   &trans
-                                         &trans        &trans        &trans             &trans             &trans  &trans
+&trans  &kp F1        &kp F2             &kp F3           &kp F4                &kp F5                  &kp F6             &kp F7           &kp F8  &kp F9  &kp F10  &kp F10
+&trans  &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC    &ext_power EP_TOG  &kp PRINTSCREEN  &trans  &trans  &kp F11  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_SEL 3          &bt BT_SEL 4            &trans             &trans           &trans  &trans  &kp F12  &trans
+                                         &trans           &trans                &trans                  &trans             &trans           &trans
             >;
         };
 
