@@ -78,6 +78,30 @@
             hold-trigger-key-positions = <11 35 23 39 40 41 38 37 36 0 24 12>;
         };
 
+        taphold_lalt: taphold_lalt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAPHOLD_LALT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+        };
+
+        taphold_ralt: taphold_ralt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAPHOLD_RALT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+        };
+
         backspace_delete: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DELETE";
@@ -97,7 +121,7 @@
 &kp TAB         &kp Q  &kp W  &kp F         &kp P  &kp G                      &kp J                   &kp L  &kp U          &kp Y    &kp SEMICOLON  &kp BACKSPACE
 &kp LEFT_SHIFT  &kp A  &kp R  &kp S         &kp T  &kp D                      &kp H                   &kp N  &kp E          &kp I    &kp O          &kp SQT
 &kp LCTRL       &kp Z  &kp X  &kp C         &kp V  &kp B                      &kp K                   &kp M  &kp COMMA      &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
-                              &kp LEFT_GUI  &mo 2  &taphold LEFT_ALT SPACE    &taphold RIGHT_ALT RET  &mo 3  &kp RIGHT_GUI
+                              &kp LEFT_GUI  &mo 2  &taphold_lalt LEFT_ALT SPACE    &taphold_ralt RIGHT_ALT RET  &mo 3  &kp RIGHT_GUI
             >;
         };
 
